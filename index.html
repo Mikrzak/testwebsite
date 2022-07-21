@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title> Code Scrambler </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="scrambler.js"></script>
+    <p id="mainText"> Code Scrambler </p>
+    <p id="descText"> Only for C++  (only single line comments supported at the moment)</p>
+
+    <input type="checkbox" id="scrambleToggle" name="scrambleToggle" value="0">
+    <label id="scrambleLabel" for="scrambleToggle"> Randomly scramble code </label><br>
+
+    <input type="checkbox" id="shuffleToggle" name="shuffleToggle" value="0">
+    <label id="shuffleLabel" for="shuffleToggle"> Randomly shuffle variables </label><br>
+
+    <input type="checkbox" id="lineToggle" name="lineToggle" value="0">
+    <label id="lineLabel" for="lineToggle"> Display code in one line </label><br>
+
+    <input type="checkbox" id="commentToggle" name="commentToggle" value="0">
+    <label id="commentLabel" for="commentToggle"> Turn all comments into gibberish</label><br>
+
+    <input type="checkbox" id="bracketToggle" name="bracketToggle" value="0">
+    <label id="bracketLabel" for="bracketToggle"> Add useless brackets </label><br>
+
+    <input type="checkbox" id="spaceToggle" name="spaceToggle" value="0">
+    <label id="spaceLabel" for="spaceToggle"> Add random spaces </label><br>
+
+    <label id="leetLabel"> Turn into leetspeak: </label>
+
+    <input type="checkbox" id="leetVariablesToggle" name="leetVariablesToggle" value="0">
+    <label id="leetVariablesLabel" for="leetVariablesToggle"> All variables </label>
+
+    <input type="checkbox" id="leetFunctionsToggle" name="leetFunctionsToggle" value="0">
+    <label id="leetFunctionsLabel" for="leetFunctionsToggle"> All functions </label><br>
+
+
+    <label id="leetLabel"> Turn into alternating caps: </label>
+
+    <input type="checkbox" id="altVariablesToggle" name="altVariablesToggle" value="0">
+    <label id="altVariablesLabel" for="altVariablesToggle"> All variables </label>
+
+    <input type="checkbox" id="altFunctionsToggle" name="altFunctionsToggle" value="0">
+    <label id="altFunctionsLabel" for="altFunctionsToggle"> All functions </label>
+
+    <textarea id="input" name="userInput" rows="40" cols="50"> </textarea>
+    <textarea id="output" name="codeOutput" rows="4" cols="50"> </textarea>
+
+    <div>
+        <button type="button" onclick="Execute()"> Execute </button>
+    </div>
+</body>
+</html>
